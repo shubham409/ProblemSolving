@@ -181,6 +181,9 @@ class Solution {
         }
         return ans;
     }
+
+}
+class Kadane {
     int maxSubarraySum(int arr[], int size)
     {
         int max_ending_here = 0, max_so_far = Integer.MIN_VALUE;
@@ -197,18 +200,5 @@ class Solution {
                 max_so_far = max_ending_here;
         }
         return max_so_far;
-    }
-    int maxSubstring(String s) {
-        int array[] = new int[s.length()];
-        for (int i = 0; i < s.length(); i++) {
-            if(s.charAt(i)=='1'){
-                array[i]=-1;
-            }
-            else {
-                array[i]=1;
-            }
-
-        }
-        return maxSubarraySum(array,array.length);
     }
 }
