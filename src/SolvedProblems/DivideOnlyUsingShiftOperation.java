@@ -1,58 +1,5 @@
-package Solutions;
+package SolvedProblems;
 
-import java.awt.image.AreaAveragingScaleFilter;
-import java.util.*;
-import java.util.stream.IntStream;
-
-class Main {
-
-    public static void main(String[] args) {
-        int i = Integer.MIN_VALUE;
-        int j = -1;
-        System.out.println(i/j);
-
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-public class Solution {
-    public int divide(int dividend, int divisor) {
-        DivideOnlyUsingShiftOperation obj = new DivideOnlyUsingShiftOperation();
-        return obj.divide(dividend, divisor);
-
-    }
-}
 class DivideOnlyUsingShiftOperation{
     public int divide(int dividendNumber, int divisorNumber) {
         long dividend = Math.abs((long) dividendNumber);
